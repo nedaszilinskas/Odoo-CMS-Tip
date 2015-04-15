@@ -5,6 +5,10 @@ $(document).ready(function() {
     website.add_template_file('/website_tip/static/src/xml/website.editor.xml');
 
     website.editor.RTELinkDialog = website.editor.RTELinkDialog.extend({
+        tip_text: false,
+        tip_position: false,
+        tip_background: false,
+        tip_color: false,
         events: _.extend({}, website.editor.RTELinkDialog.prototype.events, {
             'change input#link-tip-text': function(e) {
                 this.tip_text = $(e.target).val();
@@ -44,10 +48,10 @@ $(document).ready(function() {
             }
             if (this.element) {
                 this.element.setAttributes({
-                    'data-tipso': this.tip_text,
-                    'data-tipso-position': this.tip_position,
-                    'data-tipso-background': this.tip_background,
-                    'data-tipso-color': this.tip_color
+                    'data-tipso': this.tip_text || '',
+                    'data-tipso-position': this.tip_position || '',
+                    'data-tipso-background': this.tip_background || '',
+                    'data-tipso-color': this.tip_color || ''
                 });
             }
         }
