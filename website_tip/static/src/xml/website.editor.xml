@@ -1,0 +1,66 @@
+<templates>
+    <t t-extend="website.editor.dialog.link">
+    	<t t-jquery="form" t-operation="append">
+            <div class="form-horizontal link-style">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Tip</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">
+                                Tip
+                            </label>
+                            <div class="col-sm-8" style="line-height: 2em;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" id="link-tip-text"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">
+                                Tip position
+                            </label>
+                            <div class="col-sm-8">
+                                <div class="dropdown" style="line-height: 2em;">
+                                    <a data-toggle="dropdown" class="btn btn-default" href="#">Tip position <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <li>
+                                            <label class="btn btn-default">Top<input value="top" class="link-style" type="radio" name="link-tip-position"/></label>
+                                        </li>
+                                        <li>
+                                            <label class="btn btn-default">Right<input value="right" class="link-style" type="radio" name="link-tip-position"/></label>
+                                        </li>
+                                        <li>
+                                            <label class="btn btn-default">Bottom<input value="bottom" class="link-style" type="radio" name="link-tip-position"/></label>
+                                        </li>
+                                        <li>
+                                            <label class="btn btn-default">Left<input value="left" class="link-style" type="radio" name="link-tip-position"/></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">
+                                Tip background color
+                            </label>
+                            <div class="col-sm-8">
+                               <input placeholder="Background color (ex.: #000)" type="text" class="form-control" id="link-tip-background"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">
+                                Tip text color
+                            </label>
+                            <div class="col-sm-8">
+                                <input placeholder="Text color (ex.: #000)" type="text" class="form-control" id="link-tip-color"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</t>
+    </t>
+</templates>
