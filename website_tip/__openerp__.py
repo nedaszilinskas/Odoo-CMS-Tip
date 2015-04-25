@@ -2,7 +2,7 @@
     'name': 'Tip',
     'category': 'Website',
     'summary': 'Add beautiful mouse-over tips on links',
-    'version': '1.0',
+    'version': '8.0.2.0',
     'description': """
 Tip
 ======================================
